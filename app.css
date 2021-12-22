@@ -1,0 +1,102 @@
+body {
+    background-color: #4d4d4d;              /* 背景色 */
+    margin: 0;
+}
+
+.pomodoro {
+    position: absolute;                        /* position：ボックスの配置方法 */
+    top: 50%;
+    left: 50%;
+    margin: -200px 0 0 -180px;
+    width: 360px;
+    height: 400px;
+}
+
+.pomodoro__display {
+    width: 350px;
+    height: 300px;
+}
+
+/* 時間表記 */
+.pomodoro__time {
+
+    position: relative;
+    width: 300px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -150px;
+    color: #ecf0f1;
+    font-size: 80px;
+    font-family:'Bookman Old Style';    /* 'Comic Sans MS' ゆるい系 */
+    font-weight: bold;
+    text-align: center;
+}
+
+.pomodoro__controller {
+    width: 360px;
+    height: 100px;
+}
+
+/* ボタン全体 */
+.pomodoro__btn {
+    float: left;
+    width: 120px;
+    height: 100px;
+    text-align: center;
+}
+
+/* ボタンフェーズ */
+.pomodoro__btn--phase {
+    color: #bdc3c7;
+    font-size: 24px;
+    line-height: 100px;
+}
+
+/* 再生ボタン */
+.pomodoro__btn--work {
+    color: #bdc3c7;
+    font-size: 30px;
+    line-height: 100px;
+}
+.pomodoro__btn--work:hover {
+    color: #3498db;
+    font-size: 40px;
+    transition: font-size 0.2s;
+    transition: color 0.2s;
+}
+
+/* 停止ボタン */
+.pomodoro__btn--pause {
+    color: #bdc3c7;
+    font-size: 30px;
+    line-height: 100px;
+    display: none;
+}
+.pomodoro__btn--pause:hover {
+    color: #c0392b;
+    font-size: 40px;
+    transition: font-size 0.2s;
+    transition: color 0.2s;
+}
+
+/* リセットボタン */
+.pomodoro__btn--reset {
+    color: #bdc3c7;
+    font-size: 24px;
+    line-height: 100px;
+}
+.pomodoro__btn--reset:hover {
+    color: #2ecc71;
+    font-size: 36px;
+    transition: font-size 0.2s;
+    transition: color 0.2s;
+}
+
+/* フッター */
+footer {
+    clear: both;
+    color:#ecf0f1;
+    text-align: right;
+    font-size: 12px;
+}
